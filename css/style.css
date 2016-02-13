@@ -4,12 +4,69 @@
 ==
 ============================== For testing */
 
+/* Mobile First
+============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #fafafa;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 60%;
+  padding: 2%;
+  background: #ededed;
+  margin: 0 auto;
+}
+
+
 #portfolio-section {
-  background: lightblue;
-  height: 600px;
+  background: #fff;
+  padding: 3em 0;
 }
 
 #main-footer {
-  background: seagreen;
-  height: 600px;
+  padding: 3em 0 1.5em;
+}
+
+/* Tablet Resolution
+============================== */
+@media (min-width: 768px) {
+
+  body {
+    background: crimson;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .col {
+    max-width: 30%;
+    display: inline-block;
+  }
+
+}
+
+/* Desktop Resolution
+============================== */
+@media (min-width: 1024px) {
+
+  body {
+    background: purple;
+  }
+
 }
