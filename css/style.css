@@ -6,11 +6,16 @@
 
 /* Mobile First
 ============================== */
+h1 {
+  font-size: 5vh;
+}
+
 a {
   text-decoration: none;
 }
 
 .site-logo {
+  color: #2c3e50;
   align-self: center;
 }
 .site-logo span {
@@ -28,23 +33,42 @@ a {
 }
 
 .nav {
-  margin-top: 1.5em;
   list-style-type: none;
   text-align: center;
+  text-transform: uppercase;
 }
 .nav a {
   display: block;
+  width: 95%;
+  margin-top: 0.2em;
+  background: #fff;
   color: #ccc;
   font-size: 1.25em;
   font-weight: bold;
   padding: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav a:hover {
-  color: #0b0b0b;
+  color: #2c3e50;
 }
 
 .main-header {
   margin-top: 1em;
+  padding: 1em;
+}
+
+.profile-img-container {
+  width: 80%;
+  padding: 0.7em 0 0.4em;
+  background: #ededed;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 
@@ -54,6 +78,7 @@ a {
 
 body {
   background: #fafafa;
+  color: #2c3e50;
   text-align: center;
 }
 
@@ -65,12 +90,7 @@ img {
   margin: 0 auto;
 }
 
-.profile-img {
-  width: 60%;
-  padding: 2%;
-  background: #ededed;
-  margin: 0 auto;
-}
+
 
 
 #portfolio-section {
@@ -83,19 +103,60 @@ img {
 }
 
 
+
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h5:first-child {
+  float: left;
+  margin-left: 5px;
+}
+h5:last-child {
+  float: right;
+  margin-right: 5px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tablet Resolution and Mobile Landscape Orientation
 ============================== */
 @media (min-width: 768px),
        (min-width: 400px) and (orientation: landscape) {
 
   body {
-    background: crimson;
+
   }
 
   .nav {
     margin-top: 1em;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .nav a {
+    background: none;
   }
 
   .container {
@@ -109,7 +170,47 @@ img {
     margin: 0 -4px;
   }
 
+
+  h5:last-child {
+    display: none;
+  }
+
+  .mobile-bottom {
+    float: left;
+  }
+
+  .footer-nav {
+    margin-top: 1.3em;
+    margin-right: 5px;
+    display: block;
+    float: right;
+  }
+  .footer-nav li {
+    display: inline-block;
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Desktop Resolution
 ============================== */
@@ -140,7 +241,7 @@ img {
   }
 
   body {
-    background: purple;
+
   }
 
   .col {
