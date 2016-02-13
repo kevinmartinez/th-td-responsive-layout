@@ -41,12 +41,18 @@ img {
   padding: 3em 0 1.5em;
 }
 
-/* Tablet Resolution
+
+/* Tablet Resolution and Mobile Landscape Orientation
 ============================== */
-@media (min-width: 768px) {
+@media (min-width: 768px),
+       (min-width: 400px) and (orientation: landscape) {
 
   body {
     background: crimson;
+  }
+
+  #main-navigation li {
+    display: inline-block;
   }
 
   .container {
