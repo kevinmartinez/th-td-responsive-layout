@@ -1,11 +1,58 @@
-/* TODO: Remove testing CSS
-==
-==
-==
-============================== For testing */
+/* TODO:
+Remove testing CSS
+============================== */
+
+
+/* TODO:
+1 - put alt text on images [ ]
+============================== */
+/* TODO:
+2 - clean up with SMACSS [ ]
+============================== */
+/* TODO:
+3 - Fix the 404 page [ ]
+============================== */
+/* TODO:
+4 - HTML VALIDATE [ ]
+============================== */
+/* TODO:
+5 - CSS VALIDATE [ ]
+============================== */
 
 /* Mobile First
 ============================== */
+
+
+/* TODO
+OVERSEE NEW FONT STYLES
+============================== */
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 40px;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+/* TODO
+OVERSEE NEW FONT STYLES
+============================== */
+p,
+figure,
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
 h1 {
   font-size: 5vh;
 }
@@ -33,7 +80,6 @@ a {
 }
 
 .nav {
-  list-style-type: none;
   text-align: center;
   text-transform: uppercase;
 }
@@ -55,7 +101,7 @@ a {
 
 .main-header {
   margin-top: 1em;
-  padding: 1em;
+  padding: 1em 1em 2.5em;
 }
 
 .profile-img-container {
@@ -71,6 +117,11 @@ a {
   border-radius: 50%;
 }
 
+.profile-text p {
+  margin-top: 2em;
+  line-height: 1.4;
+  color: #ccc;
+}
 
 * {
   box-sizing: border-box;
@@ -95,14 +146,26 @@ img {
 
 #portfolio-section {
   background: #fff;
-  padding: 3em 0;
+  padding: 1em 1em 3em;
+}
+
+#portfolio-section figcaption {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.col {
+  margin-top: 2.5em;
 }
 
 #main-footer {
-  padding: 3em 0 1.5em;
+  padding: 2.5em 0 1.5em;
 }
-
-
+#main-footer p:nth-child(2) {
+  max-width: 90%;
+  margin: 0 auto 2.5em;
+  color: red;
+}
 
 
 
@@ -128,6 +191,24 @@ h5:last-child {
 
 
 
+/*
+hr {
+    margin-top: 4em;
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    max-width: 90%;
+}*/
+
+
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 
 
@@ -136,11 +217,7 @@ h5:last-child {
 
 
 
-
-
-
-
-/* Tablet Resolution and Mobile Landscape Orientation
+/* TODO: Tablet Resolution and Mobile Landscape Orientation
 ============================== */
 @media (min-width: 768px),
        (min-width: 400px) and (orientation: landscape) {
@@ -148,6 +225,29 @@ h5:last-child {
   body {
 
   }
+
+
+  #portfolio-section h2 {
+    margin-bottom: 0;
+  }
+
+
+  .profile-img-container {
+    float: right;
+    width: 40%;
+  }
+  .profile-text {
+    float: left;
+    width: 60%;
+    padding: 0 2% 0;
+    text-align: left;
+  }
+  .profile-text p {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+
 
   .nav {
     margin-top: 1em;
@@ -167,7 +267,9 @@ h5:last-child {
   .col {
     max-width: 50%;
     display: inline-block;
-    margin: 0 -4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    padding: 1%;
   }
 
 
@@ -212,7 +314,7 @@ h5:last-child {
 
 
 
-/* Desktop Resolution
+/* TODO: Desktop Resolution
 ============================== */
 @media (min-width: 1024px) {
 
@@ -247,6 +349,29 @@ h5:last-child {
   .col {
     max-width: 33.3333%;
     display: inline-block;
+    perspective: 1000;
   }
+
+
+
+
+	/* flip animation, inspired by David Walsh */
+	.flip-container:hover .flip {
+		transform: rotateY(180deg);
+	}
+
+  .flip {
+  	transition: 1.2s;
+  	transform-style: preserve-3d;
+  	position: relative;
+  }
+
+
+
+
+
+
+
+
 
 }
