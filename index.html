@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Main Navigation -->
-  <nav id="main-navigation">
+  <nav id="main-navigation" role="navigation">
     <a class="site-logo" href="#"><h1>Kevin Martinez <span>Front-End Developer</span></h1></a>
     <ul class="nav">
       <li><a href="#">Home</a></li>
@@ -31,25 +31,34 @@
   </header>
 
   <!-- Portfolio Section -->
-  <main id="portfolio-section" class="container">
+  <main role="main" id="portfolio-section" class="container">
     <h2>Portfolio</h2>
 
+      <!-- First Portfolio Row -->
       <figure class="col">
-        <img src="img/marketing-page.png" alt="">
+        <a href="404.html">
+        <div class="flip-container">
+                  <img class="flip" src="img/marketing-page.png" alt="">
+        </div>
+        </a>
         <figcaption>
           <h3>Marketing Page</h3>
           This Project shows the front page of a marketing website meant for a specific business I'm interested in.
         </figcaption>
       </figure>
       <figure class="col">
-        <img src="img/search-page.png" alt="">
+        <div class="flip-container">
+          <img class="flip" src="img/search-page.png" alt="">
+        </div>
         <figcaption>
           <h3>Search Page</h3>
           This Project shows the front page of a marketing website meant for a specific business I'm interested in.
         </figcaption>
       </figure>
       <figure class="col">
-        <img src="img/travel-app.png" alt="">
+        <div class="flip-container">
+          <img class="flip" src="img/travel-app.png" alt="">
+        </div>
         <figcaption>
           <h3>Travel App</h3>
           This Project shows the front page of a marketing website meant for a specific business I'm interested in.
@@ -58,7 +67,7 @@
 
 
 
-
+      <!-- Second Portfolio Row -->
       <figure class="col">
         <div class="flip-container">
           <img class="flip" src="img/map-spots.png" alt="">
@@ -87,11 +96,40 @@
         </figcaption>
       </figure>
 
+      <!-- Third Portfolio Row -->
+      <figure class="col">
+        <div class="flip-container">
+          <img class="flip" src="img/video-player.png" alt="">
+        </div>
+        <figcaption>
+          <h3>Responsive Video Player</h3>
+          An app to easily create responsive video content
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <div class="flip-container">
+          <img class="flip" src="img/logo-generator.png" alt="">
+        </div>
+        <figcaption>
+          <h3>Logo Generator</h3>
+          This Project shows
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <div class="flip-container">
+          <img class="flip" src="img/note-app.png" alt="">
+        </div>
+        <figcaption>
+          <h3>The Note App</h3>
+          This Project shows the front page of a marketing website meant for a specific business I'm interested in.
+        </figcaption>
+      </figure>
+
   </main>
 
   <!-- Main Footer -->
   <footer id="main-footer">
-    <h4>Contact</h4>
+    <h2>Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
     <p>Phone <a href="tel:+46768804041">+46 768 804 041</a></p>
@@ -105,7 +143,7 @@
         <h5>Kevin Martinez</h5>
         <h5><a href="#main-navigation">Back to top</a></h5>
       </div>
-      <nav class="footer-nav">
+      <nav class="footer-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#portfolio-section">Portfolio</a></li>
@@ -113,8 +151,6 @@
         </ul>
       </nav>
     </div>
-
-
   </footer>
 
 </body>
