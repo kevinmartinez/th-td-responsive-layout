@@ -29,6 +29,7 @@ Remove testing CSS
 }
 
 body {
+  font-family: 'Open Sans';
   background: #3498db;
   color: #2c3e50;
   text-align: center;
@@ -159,15 +160,22 @@ a {
   border: 5px solid #3498db;
 }
 
+.profile-text {
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+}
+
 .profile-text p {
+  font-size: 1.2em;
   margin-top: 2em;
   line-height: 1.4;
   color: #dadfe1;
 }
 
 #portfolio-section {
-  background: -webkit-linear-gradient(#3498db 30%, #2980b9 90%);
-  background: linear-gradient(#3498db 30%, #2980b9 90%);
+  background: #2980b9;
+  /*background-image: linear-gradient(to bottom, #3498db, #2980b9, #3498db);*/
   padding: 1em 1em 3em;
 }
 
@@ -201,6 +209,8 @@ a {
 h5:first-child {
   float: left;
   margin-left: 2em;
+  font-weight: 800;
+  font-size: 2em;
 }
 h5:last-child {
   float: right;
@@ -225,6 +235,44 @@ hr {
 
 
 
+.second-bg {
+  background: #2980b9;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.divider {
+  position: relative;
+
+}
+
+
+.divider::before,
+.divider::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+	background: #2980b9;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	transform: rotate(-2deg);
+	transform-origin: 0 0;
+}
 
 
 
@@ -269,6 +317,10 @@ hr {
     margin-bottom: 0;
   }
 
+  #portfolio-section h3 {
+    min-height: 50px;
+  }
+
   h1 {
     font-size: 4.5vw;
   }
@@ -290,14 +342,14 @@ hr {
 
   .profile-text {
     float: left;
-    width: 60%;
+    max-width: 50%;
     padding: 0 2% 0;
     text-align: left;
   }
 
   .profile-text p {
     margin-top: 0;
-    font-size: 1.2em;
+    font-size: 2.1vw;
   }
 
   .nav {
@@ -343,10 +395,11 @@ hr {
   }
 
   .footer-nav {
-    margin-top: 1.3em;
+    margin-top: 4em;
     margin-right: 2em;
     display: block;
     float: right;
+    font-weight: 800;
   }
 
   .footer-nav li {
@@ -415,7 +468,13 @@ hr {
   }
 
   .profile-text {
-    width: 55%;
+    max-width: 50%;
+  }
+
+  .profile-text p {
+    margin-top: 0;
+    font-size: 1.6em;
+    line-height: 1.3;
   }
 
   .profile-img-container {
