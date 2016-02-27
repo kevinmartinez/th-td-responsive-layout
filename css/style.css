@@ -231,7 +231,6 @@ hr {
 .divider::after {
     position: absolute;
     content: '';
-    pointer-events: none;
 }
 .ss-style-doublediagonal {
     z-index: 1;
