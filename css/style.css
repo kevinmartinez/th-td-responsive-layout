@@ -427,8 +427,6 @@ hr {
     .col {
         max-width: 33.3333%;
         display: inline-block;
-        -webkit-perspective: 1000;
-        perspective: 1000;
     }
     /* flip animation, inspired by David Walsh */
 
